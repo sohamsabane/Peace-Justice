@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Royal Blue - Trust & Professionalism */
+    --primary: 224 100% 59%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 224 100% 70%;
+    
+    /* Emerald Green - Hope & Accessibility */
+    --secondary: 158 73% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 158 73% 65%;
+    
+    /* Soft White - Clean & Calm */
+    --background: 220 14% 97%;
+    --foreground: 222 47% 11%;
+    
+    /* Card backgrounds */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    /* Muted elements */
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 9% 46%;
+    
+    /* Accent - subtle highlights */
+    --accent: 224 100% 96%;
+    --accent-foreground: 224 100% 59%;
+    
+    /* Destructive actions */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 100% 59%;
+    
+    /* Success state */
+    --success: 158 73% 55%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning state */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Border radius */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(224 100% 59%) 0%, hsl(158 73% 55%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 14% 97%) 0%, hsl(0 0% 100%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-primary: 0 10px 30px -10px hsl(224 100% 59% / 0.3);
+    --shadow-secondary: 0 10px 30px -10px hsl(158 73% 55% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
